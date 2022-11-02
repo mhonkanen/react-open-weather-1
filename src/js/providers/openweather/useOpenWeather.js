@@ -81,7 +81,7 @@ export const fetchReducer = (state, { type, payload }) => {
 };
 
 const useOpenWeather = (options) => {
-  const endpoint = '//api.openweathermap.org/data/2.5/onecall';
+  const endpoint = '//api.openweathermap.org/data/2.5/forecast';
   const [state, dispatch] = useReducer(fetchReducer, initialState);
   const { data, errorMessage } = state;
   const [isLoading, setIsLoading] = useState(false);

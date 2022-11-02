@@ -12,7 +12,7 @@ module.exports = {
     umdNamedDefine: true,
     globalObject: 'this'
   },
-  devtool: false,
+  devtool: 'source-map',
   module: {
     rules: [
       {
